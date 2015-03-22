@@ -1,46 +1,32 @@
-/**
- * Created by dave on 21/03/15.
- */
-var appConfig = function($stateProvider, $urlRouterProvider)
+var appConfig = function($routeProvider)
 {
-
-    $stateProvider
+    $routeProvider
 
     /* HOME */
-    .state('app.home', {
-        url: "/",
-        views: {
-            templateUrl: "home/home.html",
-            controller: 'home/homeController'
-        }
+    .when('/', {
+        templateUrl: "/app/home/home.html",
+        controller: 'homeController'
     })
 
     /* PORTFOLIO */
-    .state('app.portfolio', {
-        url: "/portfolio",
-        views: {
-            templateUrl: "portfolio/portfolio.html",
-            controller: 'portfolio/portfolioController'
-        }
+    .when('/portfolio', {
+        templateUrl: "/app/portfolio/portfolio.html",
+        controller: 'portfolioController'
     })
 
     /* EXPERIENCE */
-    .state('app.experience', {
-        url: "/experience",
-        views: {
-            templateUrl: "experience/experience.html",
-            controller: 'experience/experienceController'
-        }
+    .when('/experience', {
+        templateUrl: "/app/experience/experience.html",
+        controller: 'experienceController'
     })
 
     /* CONTACT */
-    .state('app.contact', {
-        url: "/contact",
-        views: {
-            templateUrl: "contact/contact.html",
-            controller: 'contact/contactController'
-        }
-    });
+    .when('/contact', {
+        templateUrl: "/app/contact/contact.html",
+        controller: 'contactController'
+    })
 
-    $urlRouterProvider.otherwise('/');
+    .otherwise({
+        redirectTo: '/'
+    });
 };

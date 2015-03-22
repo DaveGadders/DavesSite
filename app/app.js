@@ -1,7 +1,4 @@
-/**
- * Created by dave on 21/03/15.
- */
-angular.module('davesApp', ['ngRoute', 'ngMaterial'])
+angular.module('DavesApp', ['ngRoute', 'ngMaterial'])
 
 /* CONTROLLERS */
 .controller('homeController', homeController)
