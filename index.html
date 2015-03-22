@@ -4,13 +4,47 @@
 
 	<head>
 
-		<title> Dave Gadsden's Portfolio Site </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+        <meta name="description" content="Dave Gadsden's Portfolio Website">
+
+		<title> Dave Gadsden's Website </title>
+
+        <!-- ANGULAR/MATERIAL CSS -->
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+
+        <!-- STYLE CSS LINK -->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!-- FONT CSS -->
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+        <!-- ANGULAR JS LINKS -->
+        <script src="assets/js/angular.min.js"></script>
+        <script src="assets/js/angular-route.min.js"></script>
+        <script src="assets/js/angular-aria.min.js"></script>
+
+        <!-- ANGULAR MATERIAL SCRIPT -->
+        <script src="//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
+
+        <!-- CONTROLLER FILES -->
+        <script src="app/home/homeController.js"></script>
+        <script src="app/contact/contactController.js"></script>
+        <script src="app/experience/experienceController.js"></script>
+        <script src="app/portfolio/portfolioController.js"></script>
+
+        <!-- APP JS LINKS -->
+        <script src="app/app.config.js"></script>
+        <script src="app/app.js"></script>
+
+        <!-- ANGULAR VERSION 1.3.9 https://code.angularjs.org/1.3.9/ -->
 
 	</head>
 
-	<body>
+	<body data-ng-app="davesApp">
 
-    
+        <!-- VIEW -->
+        <ng-view></ng-view>
 
 	</body>
 
