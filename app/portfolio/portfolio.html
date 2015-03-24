@@ -1,6 +1,60 @@
 <!-- PORTFOLIO PAGE VIEW -->
-<div>
+<div data-ng-include="'/app/shared/header/header.html'"></div>
 
-    <h1> Hello Portfolio </h1>
+<md-content class="tabsdemoStaticTabs sample">
 
-</div>
+    <!-- PORTFOLIO INTRO -->
+    <section>
+
+
+
+    </section>
+
+    <!-- PORTFOLIO TABS -->
+    <section>
+
+        <!-- TABS -->
+        <md-tabs class="md-accent" md-selected="data.selectedIndex">
+
+            <md-tab id="tab1" aria-controls="tab1-content">
+                Item One
+            </md-tab>
+
+            <md-tab id="tab2" aria-controls="tab2-content">
+                Item Two
+            </md-tab>
+
+            <md-tab id="tab3" aria-controls="tab3-content">
+                Item Three
+            </md-tab>
+
+        </md-tabs>
+
+        <!-- CONTENT OF TABS -->
+        <ng-switch on="data.selectedIndex" class="tabpanel-container">
+
+            <div class="tabpanel" id="tab1-content" aria-labelledby="tab1" ng-switch-when="0" md-swipe-left="next()" md-swipe-right="previous()">
+
+                View for Item #1
+
+            </div>
+
+            <div class="tabpanel" id="tab2-content" aria-labelledby="tab2" ng-switch-when="1" md-swipe-left="next()" md-swipe-right="previous()" >
+
+                View for Item #2
+
+            </div>
+
+            <div class="tabpanel" id="tab3-content" aria-labelledby="tab3" ng-switch-when="2" md-swipe-left="next()" md-swipe-right="previous()" >
+
+                View for Item #3
+
+            </div>
+
+        </ng-switch>
+
+    </section>
+
+</md-content>
+
+<div data-ng-include="'/app/shared/footer/footer.html'"></div>

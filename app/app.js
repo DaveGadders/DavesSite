@@ -5,6 +5,8 @@ angular.module('DavesApp', ['ngRoute', 'ngMaterial'])
 .controller('contactController', contactController)
 .controller('experienceController', experienceController)
 .controller('portfolioController', portfolioController)
+.controller('headerController', headerController)
+.controller('footerController', footerController)
 
 /* APP */
 .config(appConfig);
