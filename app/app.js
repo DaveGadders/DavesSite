@@ -1,4 +1,4 @@
-angular.module('DavesApp', ['ngRoute', 'ngMaterial'])
+angular.module('DavesApp', ['ngRoute', 'ngMaterial', 'ngMdIcons'])
 
 /* CONTROLLERS */
 .controller('homeController', homeController)

@@ -1,32 +1,53 @@
+<!--<md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">-->
+
+    <!--<md-toolbar class="md-theme-light">-->
+
+        <!--<h1 class="md-toolbar-tools"> Menu </h1>-->
+
+    <!--</md-toolbar>-->
+
+    <!--<md-content ng-controller="RightCtrl" class="md-padding">-->
+
+        <!--<md-button ng-click="close()" class="md-primary">-->
+
+            <!--Close Right-->
+
+        <!--</md-button>-->
+
+    <!--</md-content>-->
+
+<!--</md-sidenav>-->
+
 <!-- HEADER -->
-<md-toolbar class="md-theme-light">
+<md-toolbar class="md-theme-dave">
 
     <div layout="row" layout-wrap>
 
-        <!-- SITE NAME -->
-        <div flex="33">
-
-            <h1 class="md-toolbar-tools">
-
-                <span> Dave Gadsden's Site </span>
-
-            </h1>
-
-        </div>
-
         <!-- NAVIGATION -->
-        <div flex="67">
+        <div flex="100">
 
-            <md-button data-ng-href="#/"> Home </md-button>
+            <div layout="row" class="nav-bar" hide show-gt-sm>
 
-            <md-button data-ng-href="#/experience"> Experience </md-button>
+                <md-button class="menu-button" flex="25" data-ng-href="#/"> Home </md-button>
 
-            <md-button data-ng-href="#/portfolio"> Portfolio </md-button>
+                <md-button class="menu-button" flex="25" data-ng-href="#/experience"> Experience </md-button>
 
-            <md-button data-ng-href="#/contact"> Contact </md-button>
+                <md-button class="menu-button" flex="25" data-ng-href="#/portfolio"> Portfolio </md-button>
+
+                <md-button class="menu-button" flex="25" data-ng-href="#/contact"> Contact </md-button>
+
+            </div>
+
+            <div layout="row" class="nav-bar mobile-menu" hide-gt-sm>
+
+                <md-button data-ng-click="toggleRight()"> <ng-md-icon icon="menu" style="fill: white" size="42"></ng-md-icon> </md-button>
+
+            </div>
 
         </div>
 
     </div>
 
 </md-toolbar>
+
+<!-- END OF HEADER -->

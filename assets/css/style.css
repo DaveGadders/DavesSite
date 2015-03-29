@@ -1,8 +1,77 @@
+/********** GENERAL ***********/
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 /********** HEADER CSS ***********/
+.md-theme-dave {
+    background-color: #D32F2F !important;
+}
+.nav-bar {
+    height: 64px;
+}
+
+.nav-bar a {
+    padding-top: 19px;
+}
+
+.menu-button {
+    text-transform: none;
+    font-weight: 400;
+}
+
+.mobile-menu {
+    float: right;
+    margin-right: 20px;
+}
 
 /********** FOOTER CSS ***********/
 
 /********** HOME CSS ***********/
+.page-intro {
+    background-color: #F44336;
+}
+
+.intro-text h1 {
+    padding: 50px 0 20px 0;
+    font-size: 48px;
+}
+
+
+.intro-text p, .section-header h2 {
+    padding: 30px 0;
+    font-size: 28px;
+}
+
+.intro-text h1, .intro-text p {
+    color: #FFF;
+    font-weight: 400;
+}
+
+.intro-text h1, .intro-text p, .section-header h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.section-header h2 {
+    color: #90A4AE;
+    font-weight: 300;
+}
+
+.about-image {
+    border-radius: 100%;
+}
+
+.about-description {
+    padding: 0 20px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .about-description {
+        padding: 0 10px;
+    }
+}
 
 /********** EXPERIENCE CSS ***********/
 
