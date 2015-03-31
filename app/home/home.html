@@ -25,13 +25,13 @@
 
         <div layout-gt-md="row" layout="column" layout-padding>
 
-            <div flex-gt-md="40">
+            <div flex-gt-md="50" class="portrait">
                 
-                <img src="/assets/img/about-me.jpg" class="about-image">
+                <img src="/assets/img/about-me.jpg" class="about-image" alt="About me - Dave Gadsden">
                 
             </div>
             
-            <div flex-gt-md="60">
+            <div flex-gt-md="50">
                 
                 <p class="about-description"> Bacon ipsum dolor amet kielbasa jerky cow, short loin pork belly t-bone pastrami bacon chicken rump
                     sausage meatloaf turducken brisket tenderloin. Pork belly flank short ribs, short loin t-bone
@@ -50,6 +50,34 @@
             <h2> Skills </h2>
 
         </div>
+
+        <div class="skill-card-section">
+
+            <div layout-gt-sm="row" layout="column" layout-padding class="skills-cards">
+
+                <div data-ng-repeat="skill in skills" flex>
+
+                    <!-- SKILLS CARDS -->
+                    <md-card class="skill-card">
+
+                        <!-- <img src="{{skill.img}}" alt="{{skill.imagealt}}"> -->
+
+                    </md-card>
+
+                    <div class="skill-details">
+
+                        <h2 class="md-title">{{skill.skillname}}</h2>
+
+                        <p> {{skill.description}}</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
 
     </section>
 
