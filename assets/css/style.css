@@ -1,11 +1,12 @@
 /********** GENERAL ***********/
 body {
     font-family: 'Lato', sans-serif;
+    color: #90A4AE;
 }
 
 /********** HEADER CSS ***********/
 .md-theme-dave {
-    background-color: #D32F2F !important;
+    background-color: #1565C0 !important;
 }
 .nav-bar {
     height: 64px;
@@ -28,8 +29,16 @@ body {
 /********** FOOTER CSS ***********/
 
 /********** HOME CSS ***********/
+.page-intro, .skills-section {
+    background-color: #0D47A1;
+}
+
 .page-intro {
-    background-color: #F44336;
+    border-bottom: 2px solid #455A64;
+}
+
+.skills-section {
+    border-top: 2px solid #455A64;
 }
 
 .intro-text h1 {
@@ -65,15 +74,24 @@ body {
     width: 250px;
 }
 
+.about-banner {
+    padding-bottom: 35px;
+}
+
 .about-description {
     padding: 0 20px;
     text-align: center;
+}
+
+.skill-card-section {
+    padding-top: 10px;
 }
 
 .skills-cards {
     margin: 0 auto;
     text-align: center;
     width: 100%;
+    padding: 0px 5px;
 }
 
 .skills-cards .skill-card {
@@ -81,10 +99,19 @@ body {
     border-radius: 100%;
 }
 
+.skill {
+    padding-bottom: 30px;
+}
+
 .skill-card {
-    max-width: 300px;
-    height: 300px;
+    max-width: 200px;
+    height: 200px;
     margin: 0 auto;
+}
+
+.skill-card img {
+    width: 160px;
+    margin: 20px 0 0 20px;
 }
 
 .md-title {
